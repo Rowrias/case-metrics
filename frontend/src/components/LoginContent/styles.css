@@ -1,0 +1,12 @@
+.login-container {
+    width: 300px;
+    border: 1px solid #FFFFFF;
+}
+
+.form-group {
+    padding: 5px;
+}
+
+button {
+    margin: 10px;
+}

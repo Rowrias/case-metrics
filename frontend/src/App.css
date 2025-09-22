@@ -1,0 +1,13 @@
+/* App.css */
+.app {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}

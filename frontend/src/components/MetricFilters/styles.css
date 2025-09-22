@@ -1,0 +1,25 @@
+.controls {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    gap: 10px;
+}
+
+.controls-group {
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+}
+
+.control-group.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filters-info {
+    margin: 10px;
+    border: 1px solid #FFFFFF;
+}

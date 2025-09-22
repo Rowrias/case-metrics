@@ -1,0 +1,14 @@
+.header {
+    margin: 10px;
+    padding: 3px;
+    border: 1px solid #FFFFFF;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-info button {
+    padding: 1px 30px;
+}
