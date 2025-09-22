@@ -12,3 +12,4 @@
 - cd frontend
 - npm install
 - npm run dev (para rodar)
+- acessar o link: http://localhost:5173/
