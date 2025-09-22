@@ -3,7 +3,7 @@ import axios from 'axios';
 import './styles.css';
 
 function LoginContent({ onLogin }) {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -15,7 +15,7 @@ function LoginContent({ onLogin }) {
 
     try {
       const response = await axios.post('http://localhost:5000/login', {
-        username,
+        email,
         password,
       });
 
@@ -45,10 +45,10 @@ function LoginContent({ onLogin }) {
       <form onSubmit={handleSubmit} className='form'>
         <div className="form-group">
           <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
             disabled={loading}
           />

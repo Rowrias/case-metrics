@@ -43,13 +43,13 @@ def token_required(f):
 @app.route('/login', methods=['POST'])
 def login():
     data = request.json
-    username = str(data.get('username'))
+    email = str(data.get('email'))
     password = str(data.get('password'))
 
-    user = users_dataframe[(users_dataframe['username'] == username) & (users_dataframe['password'] == password)]
-
+    user = users_dataframe[(users_dataframe['email'] == email) & (users_dataframe['password'] == password)]
     if not user.empty:
         role = user.iloc[0]['role']
+        username = user.iloc[0]['username']
 
         # Criar token JWT
         token = jwt.encode({
